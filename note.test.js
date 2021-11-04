@@ -1,10 +1,8 @@
 
-const Note = require("../notes");
-const note = new Note("new content");
-
-describe("Note", () => {
-
-  it("instantiates a new note", () => {
-  expect(this.note()).toBeInstanceOf(Note)
+const Note = require("./note");
+describe("note", () => {
+  const note = new Note("I am new content");
+  it("creates a new note with content", () => {
+    expect(note.getContent()).toEqual("I am new content");
   });
 });

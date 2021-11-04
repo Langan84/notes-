@@ -1,9 +1,9 @@
 class Note {
- constructor(content) {
-   this.content = content;
- }
-
-
+  constructor(content) {
+    this.content = content;
+  }
+  getContent() {
+    return this.content;
+  }
 }
-
-module.exports = Note
+module.exports = Note;
